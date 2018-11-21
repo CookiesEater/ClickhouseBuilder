@@ -1746,7 +1746,7 @@ abstract class BaseBuilder
      */
     public function format(string $format)
     {
-        $this->format = new Format(strtoupper($format));
+        $this->format = new Format($format);
 
         return $this;
     }
